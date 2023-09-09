@@ -1,7 +1,16 @@
 import React from 'react'
+import TicketList from './TicketList'
 
 export default function Tickets() {
   return (
-    <main><h2>Tickets</h2></main>
+    <main>
+      <nav>
+        <div>
+          <h2>Tickets</h2>
+          <p><small>Currently Open Tickets</small></p>
+          <TicketList />
+        </div>
+      </nav>
+    </main>
   )
 }
