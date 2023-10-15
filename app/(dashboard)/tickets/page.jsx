@@ -3,6 +3,10 @@ import TicketList from './TicketList'
 import Loading from '../loading'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'WelpDesk | Tickets',
+}
+
 export default function Tickets() {
   return (
     <main>
