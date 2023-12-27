@@ -23,6 +23,15 @@ export default function CreateForm() {
       body: JSON.stringify(newTicket)
     })
 
+    const json = await res.json()
+
+    if (json.error) {
+      console.log(error.message)
+    }
+    if(json.data) {
+      router.refresh
+      router.push('/tickets')
+    }
   }
 
   return (
